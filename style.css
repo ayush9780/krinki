@@ -1,0 +1,676 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+   
+}
+
+body{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #555555;
+}
+.main{
+    /* background-color: white; */
+    height: 760px;
+    position: relative;
+}
+.cont2{
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+}
+.back{
+    width: 100%;
+    overflow: hidden;
+    
+}
+.back::after{
+    content: "";
+    height: 550px;
+    background-color:wheat;
+    width: 950px;
+    position: absolute;
+    /* float: right; */
+    transform: translate(70px) translateY(-180px) rotate(-45deg);
+    border-radius: 50px;
+}
+.nav{
+    display: flex;
+    padding: 20px;
+    /* padding-left: 100px; */
+    gap: 20px;
+    justify-content: space-around;
+   
+    /* background-color: white; */
+    width: 100%;
+    z-index: 50000000;
+    position: fixed;
+    
+}
+.navmain{
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+}
+.bg-transparent{
+    position: fixed;
+    top:0;
+    background: red !important;
+}
+.nav ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+.nav li{
+    position: relative;
+    /* margin-right: auto; */
+
+}
+.nav li::after{
+  
+    content: "";
+    height: 3px;
+    background-color:#FF651C;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: bottom right ;
+    
+}
+.nav li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left ;
+   
+    
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+/* .nav a:hover{
+    color: #FF651C;
+    text-decoration: underline;
+    
+} */
+.btn button{
+    background-color: #FF651C;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 6px 6px 0 -1px #373737;
+    letter-spacing: 2px;
+}
+.btn button:hover{
+    background-color: #373737;
+    color: white;
+    box-shadow: 6px 6px 0 -1px #FF651C;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+
+}
+.cont1{
+    width: 30%;
+    padding: 250px 20px 30px 120px;
+   
+    
+}
+.cont1 h5{
+ font-size: 16px;
+ color: #555555;
+ margin: 0 0 30px;
+}
+.cont1 h1{
+    font-size: 60px;
+    color: #373737;
+    margin: 0 0 35px;
+}
+.cont1 p{
+    font-size: 20px;
+    color: #555555;
+    margin: 0 0 20px;
+    /* margin-bottom: 10px; */
+}
+.cont2 img{
+    align-items: center;
+    padding: 170px 150px 0 120px;
+    height: 500px;
+    position: relative;
+    
+}
+/* ---------------------------head2----------------------------- */
+.head2{
+    background-color: #373737;
+    height: 150px;
+}
+.head2 img{
+    padding: 60px;
+    padding-left: 100px;
+    align-items: center;
+   
+}
+
+/* -----------------------freelancer----------------------------------- */
+.freelancer{
+    width: 100%;
+
+}
+.ser{
+    display: flex;
+    justify-content: center;
+    padding: 80px 60px;
+}
+.ser1{
+    width: 50%;
+    /* justify-content: space-between; */
+}
+.ser2{
+    width: 40%;
+    justify-content: space-evenly;
+}
+.ser2 h1{
+    color: #373737;
+    font-size: 36px;
+    margin: 0 0 25px;
+}
+.ser2 p{
+    color: #555555;
+    font-size: 16px;
+    margin: 0 0 16px;
+}
+.heading{
+    display: flex;
+    gap: 44px;
+    padding-top: 20px;
+}
+.heading h5{
+    font-size: 26px;
+    color: #FF651C;
+}
+.main-btn2{
+  
+    display: flex;
+
+} 
+
+.btn2 button{
+    background-color: #FF651C;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 6px 6px 0 -1px #373737;
+    letter-spacing: 2px;
+    margin-top: 24px;
+    margin-right: 20px;
+    
+}
+
+.btn3{
+    background-color: #373737;
+    box-shadow: 6px 6px 0 -1px #FF651C;
+}
+.btn2 button:hover{
+    background-color: #373737;
+    box-shadow: 6px 6px 0 -1px #FF651C;
+}
+
+.btn3 button:hover{
+    background-color: #FF651C;
+    box-shadow: 6px 6px 0 -1px #373737;
+
+}
+
+/* -------------------------------my services--------------------------------- */
+.services{
+    background-image: url(https://pxdraft.com/themeforest/krinky/assets/img/effect/bg-effect-1.png);
+    background-size: cover;
+    height: 1000px;
+
+}
+.ser-head h1{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    padding-top: 70px;
+}
+.section{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px;
+    
+}
+.section1{
+    width: 45%;
+    /* padding-top: 80px; */
+
+}
+.sub{
+    background-color: #9BD3D0;
+    height: 200px;
+    margin-top: 30px;
+    border: 2px solid black;
+}
+.sub:hover{
+    box-shadow: 6px 6px 0 -1px #373737;
+}
+.section2{
+    width: 45%;
+    /* padding-top: 70px; */
+}
+.box{
+    padding: 40px;
+    display: flex;
+    color: black;
+}
+.out{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: white;
+   
+}
+.out i{
+  
+    margin: 10px 15px;
+    font-size: 30px;
+}
+.content{
+    padding-left:10px;
+    color: #373737;
+    
+}
+.content h5{
+    font-size: 24px;
+    
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.content p{
+    font-size: 17px;
+}
+
+/* ------------------------skills-------------------------- */
+
+.skills{
+    width: 100%;
+    height: 745px;
+    display: flex;
+    margin-top: 110px;
+    
+   
+}
+
+.skill1{
+    width: 50%;
+
+}
+.sskill1 h1{
+ text-align: start;
+}
+.sub-skill{
+    width: 100%;
+    margin: 50px ;
+    margin-left: 100px;
+    display: flex;
+}
+.sub-skill1{
+    width: 50%;
+    margin-right: -70px;
+
+}
+
+.skill2{
+    margin-top: 90px
+}
+.outer{
+    padding: 10px;
+    display: flex;
+    color: black;
+    
+}
+.square{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: white;
+}
+.square i{
+    font-size: 30px;
+    margin: 10px;
+    margin-left: 13px;
+}
+.outer h3{
+    color: #373737;
+    padding: 20px;
+}
+
+/* -----------------------------------work--------------------- */
+.work{
+    width: 100%;
+    height: 150px;
+    background-color: #373737;
+    color: white;
+    display: flex;
+    gap: 80px;
+    
+    
+}
+.work h1{
+    padding: 60px;
+    font-size: 40px;
+    padding-left: 100px;
+}
+#bt{
+    padding: 60px;
+    padding-left: 190px;
+    margin-left: 150px;
+
+}
+#bt button{
+    background-color: #FEC448;
+    box-shadow: 5px 5px 0 -2px #FF651C;
+    color: black;
+}
+#bt button:hover{
+    background-color: #FF651C;
+    box-shadow: 5px 5px 0 -2px #FEC448;
+    color: white;
+
+}
+
+/* -------------------------------my projects--------------------------------------- */
+.projects{
+    /* height: 1000px; */
+    background-color:rgba(254, 196, 72, 0.1);
+    width: 100%;
+     
+   
+}
+.projects h1{
+    padding-top: 80px;
+    font-size: 50px;
+    text-align: center;
+}
+.main-project{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+   
+    margin-top: 80px;
+    
+   
+
+}
+.project1{
+    width: 50%;
+    margin-left: 100px;
+    padding-left: 60px;
+    
+  
+}
+.project2{
+    width: 50%;
+
+}
+
+.col1{
+    width: 90%;
+    margin-bottom: 100px;
+    /* padding-bottom: 20px; */
+    
+}
+.col2{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    
+}
+.col1{
+    background-image: url(https://pxdraft.com/themeforest/krinky/assets/img/project-1.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 350px;
+    
+}
+.col1:hover{
+    box-shadow: 6px 6px 0 -1px #373737
+}
+.col2 h5{
+    background-color: #FF651C33;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px ;
+}
+.col2 h3{
+    font-size: 26px;
+    margin-top: 30px;
+} 
+.col2 p{
+    margin-top: 20px;
+    font-size: 16px;
+    
+}
+.arrow{
+  
+    border: 2px solid black;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    margin-top: 20px;
+   /* display: none; */
+   opacity: 0;
+   transform: translateX(-0px) ;
+   transition: all 1s ease-in-out;
+   
+}
+.col1:hover .arrow{
+    transition: all 1s ease-in-out;
+    display: block;
+    opacity: 1;
+    transform: translateX(20px) ;
+    
+   
+}
+
+.arrow i{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 3px;
+    
+}
+
+/* ---------------------------testimonial---------------------------------------------- */
+.testimonial{
+    background-color: white;
+    height: 500px;
+    width: 100%;
+}
+.testimonial h1{
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-top: 70px;
+    margin-top: 40px;
+}
+.main-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.test-box{
+
+    width: 588px;
+    height: 209px;
+    border: 2px solid black;
+    margin: 20px;
+    display: flex;
+    
+
+    
+}
+.test-box:hover{
+    box-shadow: 6px 6px 0 -1px #373737;
+}
+.test-box img{
+    border: 2px solid black;
+    height: 96px;
+    width: 96px;
+    margin: 30px;
+
+}
+.test-content{
+    margin-top: 30px;
+    font-size: 16px;
+    color: #555555;
+}
+.test-content h5{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.test-box i{
+color: #555555;
+opacity: 0.2;
+font-size: 100px;
+margin-top: 80px;
+margin-right: 20px;
+}
+
+/* -----------------------------------my contact------------------------------------------ */
+.contact{
+    background-image: url(https://pxdraft.com/themeforest/krinky/assets/img/effect/bg-effect-3.png);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    background-color: #373737;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.get{
+    width: 50%;
+    margin: 90px ;
+    background-color: white;
+   
+}
+.details{
+    margin: 30px;
+    color: black;
+}
+.sub-detail{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 30px;
+}
+form{
+    margin-top: 30px;
+    color: #373737;
+}
+textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+   padding-right: 40px;
+}
+#btn-det{
+    background-color: #FEC447; 
+    box-shadow: 6px 6px 0 -1px #FF651C;
+    color: black;
+    font-size: 15px;
+    margin-top: 5px;
+}
+#btn-det:hover{
+    background-color: #FF651C;
+    box-shadow: 6px 6px 0 -1px #FEC447;
+    color: white;
+    
+}
+.info{
+    width: 50%;
+    margin: 90px;
+}
+.info img{
+    height: 300px;
+    width: 400px;
+}
+.phone{
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+}
+.phone-box{
+    height: 55px;
+    width: 55px;
+    background-color: #9BD3D0;
+   
+
+}
+.phone-box i{
+    font-size: 25px;
+    padding: 12px;
+    padding-left: 18px;
+
+}
+.phone-cont{
+    color: white;
+}
+.phone-cont h5{
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 14px;
+}
+.phone-cont p{
+    font-size: 20px;
+}
+
+.footer{
+    height: 70px;
+    background-color: #373737;
+    display: flex;
+    gap: 680px;
+
+
+    
+}
+.icon{
+padding: 25px;
+padding-left: 80px;
+
+}
+.icon i{
+
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    padding-left: 20px;
+
+}
+.icon i:hover{
+   color: #FF651C;
+}
+.footer p{
+padding: 25px;
+font-size: 18px;
+color: rgba(255, 255, 255, 0.507);
+
+}
